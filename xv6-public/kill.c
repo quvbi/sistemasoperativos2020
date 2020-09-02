@@ -12,10 +12,11 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
-     if(i==1){
-printf(1, "no se puede matar chavo");
+     if(atoi(argv[i])==1){
+        printf(1,"no se puede mi chavo");
      } else{
     kill(atoi(argv[i]));
      }
+     
   exit();
 }
